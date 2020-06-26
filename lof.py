@@ -11,14 +11,14 @@ class LOF:
         self.s = {
             "代码": "fund_id",
             "名称": "fund_nm",
-            # "现价": "price",
+            "现价": "price",
             "涨幅": "increase_rt",
-            # "基金净值": "fund_nav",
-            # "实时估值": "estimate_value",
+            "基金净值": "fund_nav",
+            "实时估值": "estimate_value",
             "溢价率": "discount_rt",
         }
         # 可在列表中添加想要监控的LOF
-        self.LOFList = [161005, 163402]
+        self.LOFList = [161005, 163402, 162605, 163407]
         self.LOFList.sort()
 
         self.session = requests.Session()
